@@ -1,0 +1,30 @@
+# don't forget to update lib/constants/constants.dart
+
+name: bfck
+description: A Dart command-line interpreter for brainfuck esolang.
+
+# fixed bug:     X.X.^
+# added feature: X.^.0
+# added tests:   ^.0.0
+# added text:    X.X.X+^
+version: 0.1.0
+
+environment:
+  sdk: ^3.0.5
+
+dependencies:
+  meta: ^1.10.0
+  path: ^1.8.3
+  dart_console: ^1.2.0
+  args: ^2.4.2
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
+
+assets:
+  - assets/
+
+executables:
+  bfck:
+    #- bin/bfck.dart
