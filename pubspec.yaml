@@ -7,7 +7,7 @@ description: A Dart command-line interpreter for brainfuck esolang.
 # added feature: X.^.0
 # added tests:   ^.0.0
 # added text:    X.X.X+^
-version: 0.1.0
+version: 0.1.0+1
 
 environment:
   sdk: ^3.0.5
