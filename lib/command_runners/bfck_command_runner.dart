@@ -67,7 +67,11 @@ class BfckCommandRunner extends CommandRunner<Executer> {
 
   @override
   Future<Executer?> runCommand(ArgResults topLevelResults) async {
-    _containsHelp = topLevelResults['help'] as bool;
+    _containsHelp = (
+      topLevelResults["help"] as bool
+      || topLevelResults.command?.name == "help"
+    );
+    
     return super.runCommand(topLevelResults);
   }
 
